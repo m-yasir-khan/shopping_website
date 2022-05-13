@@ -1,38 +1,837 @@
-.App {
+.navBar {
+  height: 80px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.navBar div {
+  display: flex;
+}
+
+.firstTaBs {
+  padding-left: 50px;
+}
+
+.firstTaBs p {
+  padding-left: 15px;
+
+}
+
+.onlyImages {
+  display: inline-flex;
+}
+
+.counterBottom {
+  display: none;
+}
+
+.endTabs {
+  padding-right: 100px;
+  width: 100%;
+  max-width: 50px;
+  min-width: 50px;
+}
+
+.endTabs img {
+  padding-left: 40px;
+}
+
+.vsfImg {
+  padding-top: 30px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+
+.toogle {
+  display: none;
+  padding-top: 30px;
+  height: 25px;
+  width: 25px;
+}
+
+.cartImg {
+  padding-top: 30px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+
+}
+
+.dollerImg {
+  padding-top: 25px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+
+
+}
+
+.woMen {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 15px;
+  cursor: pointer;
+
+}
+
+.mEn {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 15px;
+  cursor: pointer;
+
+
+
+}
+
+.kiDs {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.WomenHeading {
+  height: 68px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.wemonCollectionDiv {
+  margin: 10px auto;
+  width: 90%;
+
+}
+
+.cardsDiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 28%;
+  top: 0px;
+  border-radius: 0px;
+  padding: 16px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.produCt {
+  width: 100%;
+}
+
+.produCtoff {
+  width: 100%;
+  opacity: 0.5;
+  position: relative !important;
+}
+
+.outoFF {
+  position: absolute;
+  height: 39px;
+  width: 173px;
+  margin-left: 5%;
+  margin-top: -150px;
+}
+
+.sizeBox {
+  border: 1px solid black;
+  height: 35px;
+  width: 45px;
+  margin-right: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.overLayHeading {
+  font-family: Roboto Condensed;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.overlayPrice {
+  font-family: Raleway;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.buttonDiv {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addtocartButton {
+  height: 52px;
+  width: 95%;
+  border-radius: 0px;
+  background: #5ECE7B;
+  border: none;
+  cursor: pointer;
+  color: white;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backImg {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  float: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cardOverlay {
+  display: inline-flex;
+}
+
+.CArdAbout {
+  padding-left: 20px;
+}
+
+.cArdImagediv {
+  width: 400px;
+
+}
+
+.smallImage {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.cArdImage {
+  width: 300px;
+  display: block;
+  margin-left: 30px;
+  cursor: pointer;
+  margin-top: 10px
+}
+
+.myBagSmall {
+  position: absolute;
+  height: 70%;
+  width: 325px;
+  left: 70%;
+  top: 78px;
+  border-radius: 0px;
+  padding: 32px, 16px, 32px, 16px;
+  background-color: #ffff;
+  border: 1px solid gray;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  /* left: 0;
+  top: 0; */
+  float: left;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  float: left;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  margin-left: 70%;
+  width: 20%;
+  height: 300px !important;
+  overflow: auto;
+}
+
+.uuul {
+
+  display: inline-flex;
+  list-style: none;
+  margin-left: -40px;
+
+}
+
+.llli {
+  border: 1px solid black;
+  width: 16px;
+  height: 18px;
+  margin-left: 10px;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+  align-items: center;
+}
+
+.bagCart {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.bagCartDataDiv {
+  border-top: 0.5px solid gray;
+  border-bottom: 0.5px solid grey;
+  width: 100%;
+  display: inline-flex;
+}
+
+.counTer {
+  height: 100%;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.nameBrand {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.imageDiv {
+  display: inline-flex;
+  justify-content: right;
+  width: 50%;
+}
+
+.aboutDiv {
+  width: 50%;
+}
+
+.cardImg {
+  width: 300px;
+  height: 100% !important;
+  float: right;
+}
+
+.taX {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.quantitY {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.spAn {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  margin-left: 5px;
+}
+
+.totAL {
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.orDrbTn {
+  height: 43px;
+  width: 250px;
+  left: 0px;
+  top: 116px;
+  border-radius: 0px;
+  padding: 16px, 32px, 16px, 32px;
+  color: white;
+  background-color: #5ECE7B;
+  border: none;
+  cursor: pointer;
+}
+
+.smallImg {
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.overlysiZeUl {
+  display: inline-flex;
+  list-style: none;
+  margin-left: -40px;
+
+}
+
+.selectZixeinoverlay {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sizeBox2 {
+  height: 35px;
+  width: 45px;
+  margin-right: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sizeBox3 {
+  height: 35px;
+  width: 45px;
+  margin-right: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: black;
+}
+
+.sizeBox1 {
+  height: 35px;
+  width: 45px;
+  margin-right: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: green;
+}
+
+.overlayText {
+  font-size: 16px;
+}
+
+.smallOverlay {
+  width: 100%;
+
+  border-bottom: 0.5px solid;
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+
+.textDivSmOly {
+
+  width: 50%;
+}
+
+.color1SmOly {
+  border: none;
+  background-color: grey;
+
+}
+
+.color2SmOly {
+  background-color: green;
+  border: none;
+}
+
+.color3SmOly {
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+
+.adddelbtnSmOly {
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 15%;
+  width: 30%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.bagUl {
+  display: inline-flex;
+  list-style: none;
+  padding-left: 0px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.xsBagLi {
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+.bagCartUpper{
+  
+  width: 80%;
+  margin: 10px auto;
+}
+.sBagLi {
+  background-color: black;
+  border: 1px solid black;
+  height: 25px;
+  color: white;
+  width: 25px;
+  text-align: center;
+  margin-left: 10px;
+
+}
+
+.mBagLi {
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  text-align: center;
+
+}
+
+.lBagLi {
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.bagColor1 {
+  background-color: grey;
+  border: 1px solid grey;
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+
+}
+
+.bagColor2 {
+  margin-left: 10px;
+  background-color: black;
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+}
+
+.bagColor3 {
+  margin-left: 10px;
+  background-color: green;
+  border: 1px solid green;
+  height: 25px;
+  width: 25px;
+}
+
+.colorUlBag {
+  display: inline-flex;
+  list-style: none;
+  padding-left: 0px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.counterUl {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.counterAdd {
+  border: 1px solid;
+  height: 50px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.counterSum {
+  border: 1px solid;
+  height: 50px;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.counterCount {
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.textAdd {
+  margin: 0px;
+}
+
+.botmcountUl {
+  height: 20px;
+  list-style: none;
+  display: inline-flex;
+}
+
+.botmVounterAdd {
+  border: 1px solid;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+
+}
+
+.botnCounterCount {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.botmCounterSub {
+  border: 1px solid;
+  width: 50px;
+  text-align: center;
+  height: 50px;
+
+}
+
+
+
+
+
+
+/* media quree */
+
+@media only screen and (max-width: 1200px) {
+  .modal-content {
+    width: 30%;
+    margin-left: 60%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+    width: 27%;
+    margin-left: 1.5%;
   }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .cardOverlay {
+    display: block;
+  }
+
+  .modal-content {
+    width: 40%;
+    margin-left: 50%;
+  }
+
+  .onlyImages {
+    display: inline-flex;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 830px) {
+  .card {
+    width: 27%;
+    margin-left: 10px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 820px) {
+  .card {
+    width: 40%;
+    margin-left: 2%;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .imageDiv {
+    width: 100% !important;
+  }
+
+  .counterBottom {
+    display: inline-flex;
+    width: 100%;
+    margin-left: -40px;
+    justify-content: center;
+    justify-content: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cardImg {
+    width: 230px !important;
+    height: auto !important;
+  }
+
+  .counTer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    width: 50%;
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .vsfImg {
+    display: none;
+  }
+
+  .smallImage {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .card {
+    width: 40%;
+    margin-left: 1.5%;
+  }
+
+  .modal-content {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .bagCartDataDiv {
+    display: block;
+  }
+
+  .cardImg {
+    width: 100% !important;
+  }
+
+  .counterBottom {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+
+  .cArdImagediv {
+    width: 80%;
+    display: inline-flex;
+  }
+
+  .cArdImage {
+    width: 100%;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+  .card {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .firstTaBs {
+    padding-left: 1px;
+  }
+
+  .modal-content {
+    width: 70%;
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+
+  .endTabs {
+    padding-right: 50px;
+  }
+
+  .dollerImg {
+    display: none;
+
+  }
+
+  .cartImg {
+    display: none;
+  }
+
+  .toogle {
+    display: inline;
+  }
+}
+
+.overlayDiv {
+  background-color: white;
+  position: fixed;
+  cursor: pointer;
+  height: 677px;
+  width: 325px;
+  left: 1043px;
+  top: 78px;
+  border-radius: 0px;
+  padding: 32px, 16px, 32px, 16px;
+
+
 }
